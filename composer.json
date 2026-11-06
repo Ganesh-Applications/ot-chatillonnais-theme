@@ -1,0 +1,49 @@
+{
+    "name": "pangram/ot-chatillonnais-theme",
+    "type": "wordpress-theme",
+    "description": "Thème sur mesure de l'Office de Tourisme du Châtillonnais, basé sur Sage.",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "homepage": "https://atelier-pangram.fr",
+    "authors": [
+        {
+            "name": "Aubin EBANO",
+            "homepage": "https://atelier-pangram.fr"
+        }
+    ],
+    "keywords": [
+        "wordpress",
+        "sage",
+        "acorn"
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "log1x/acf-composer": "^3.4",
+        "roots/acorn": "^6.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.20"
+    },
+    "suggest": {
+        "log1x/sage-directives": "A collection of useful Blade directives for WordPress and Sage (^1.0)."
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Roots\\Acorn\\ComposerScripts::postAutoloadDump"
+        ],
+        "lint": "pint --test",
+        "lint:fix": "pint"
+    }
+}
