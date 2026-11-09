@@ -1,0 +1,25 @@
+/* Primitives — export Figma (collection "Primitives"). Valeurs brutes, ne pas utiliser directement dans les vues. */
+:root {
+  /* Collection: Primitives */
+  --primitives-color-brand-blue-100: oklch(0.954 0.024 242.5);
+  --primitives-color-brand-blue-500: oklch(0.74 0.112 213.5);
+  --primitives-color-brand-blue-700: oklch(0.593 0.097 212.4);
+  --primitives-color-brand-green-100: oklch(0.986 0.032 126.2);
+  --primitives-color-brand-green-500: oklch(0.593 0.166 136.4);
+  --primitives-color-brand-purple-100: oklch(0.941 0.046 320.4);
+  --primitives-color-brand-purple-500: oklch(0.372 0.156 337.2);
+  --primitives-color-brand-red-100: oklch(0.928 0.037 20.7);
+  --primitives-color-brand-red-500: oklch(0.591 0.211 28.2);
+  --primitives-color-common-black-300: oklch(0.589 0.014 234.9);
+  --primitives-color-common-black-500: oklch(0.258 0.012 235.2);
+  --primitives-color-common-black-a30: oklch(0.259 0.012 225.6 / 0.30);
+  --primitives-color-common-black-a50: oklch(0.259 0.012 225.6 / 0.50);
+  --primitives-color-common-black-a70: oklch(0.259 0.012 225.6 / 0.70);
+  --primitives-color-common-brown-100: oklch(0.964 0.017 76.1);
+  --primitives-color-common-brown-200: oklch(0.92 0.022 76.5);
+  --primitives-color-common-brown-300: oklch(0.898 0.026 76);
+  --primitives-color-common-brown-500: oklch(0.839 0.032 76);
+  --primitives-color-common-brown-700: oklch(0.749 0.029 73.1);
+  --primitives-color-common-brown-900: oklch(0.638 0.02 72.8);
+  --primitives-color-common-white: oklch(1 0 0);
+}

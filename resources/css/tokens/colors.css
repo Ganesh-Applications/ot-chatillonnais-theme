@@ -1,0 +1,119 @@
+/* Couleurs sémantiques — export Figma (collection "Semantics"). Génèrent les classes bg-*, text-*, border-*… */
+
+@theme {
+  /* Désactive les couleurs par défaut de Tailwind */
+  --color-*: initial;
+}
+
+@theme inline {
+  --color-accordion-border: var(--primitives-color-common-brown-900);
+
+  --color-badge-blue-soft-bg: var(--primitives-color-brand-blue-100);
+  --color-badge-blue-soft-icon: var(--primitives-color-brand-blue-700);
+  --color-badge-blue-strong-bg: var(--primitives-color-brand-blue-500);
+  --color-badge-blue-strong-icon: var(--primitives-color-brand-blue-100);
+  --color-badge-neutral-soft-bg: var(--primitives-color-common-white);
+  --color-badge-neutral-soft-icon: var(--primitives-color-common-black-500);
+  --color-badge-neutral-strong-bg: var(--primitives-color-common-black-500);
+  --color-badge-neutral-strong-icon: var(--primitives-color-common-white);
+  --color-badge-red-soft-bg: var(--primitives-color-brand-red-100);
+  --color-badge-red-soft-icon: var(--primitives-color-brand-red-500);
+  --color-badge-red-strong-bg: var(--primitives-color-brand-red-500);
+  --color-badge-red-strong-icon: var(--primitives-color-brand-red-100);
+  --color-bg-el-soft: var(--primitives-color-common-brown-200);
+  --color-bg-el-strong: var(--primitives-color-common-brown-500);
+  --color-bg-footer: var(--primitives-color-common-brown-500);
+  --color-bg-on-image: var(--primitives-color-common-white);
+  --color-bg-page: var(--primitives-color-common-brown-100);
+  --color-bg-pop-up: var(--primitives-color-common-brown-100);
+  --color-bg-section: var(--primitives-color-common-brown-300);
+  --color-button-green-bg: var(--primitives-color-brand-green-500);
+  --color-button-green-icon: var(--primitives-color-brand-green-500);
+  --color-button-green-icon-bg: var(--primitives-color-brand-green-100);
+  --color-button-green-text: var(--primitives-color-brand-green-100);
+  --color-button-neutral-bg: var(--primitives-color-common-black-500);
+  --color-button-neutral-icon: var(--primitives-color-common-black-500);
+  --color-button-neutral-icon-bg: var(--primitives-color-common-brown-300);
+  --color-button-neutral-text: var(--primitives-color-common-brown-300);
+  --color-button-primary-bg: var(--primitives-color-brand-blue-500);
+  --color-button-primary-icon: var(--primitives-color-brand-blue-500);
+  --color-button-primary-icon-bg: var(--primitives-color-brand-blue-100);
+  --color-button-primary-text: var(--primitives-color-brand-blue-100);
+  --color-button-purple-bg: var(--primitives-color-brand-purple-500);
+  --color-button-purple-icon: var(--primitives-color-brand-purple-500);
+  --color-button-purple-icon-bg: var(--primitives-color-brand-purple-100);
+  --color-button-purple-text: var(--primitives-color-brand-purple-100);
+  --color-button-red-bg: var(--primitives-color-brand-red-500);
+  --color-button-red-icon: var(--primitives-color-brand-red-500);
+  --color-button-red-icon-bg: var(--primitives-color-brand-red-100);
+  --color-button-red-text: var(--primitives-color-brand-red-100);
+  --color-button-subtle-bg: var(--primitives-color-common-brown-300);
+  --color-button-subtle-icon: var(--primitives-color-common-brown-300);
+  --color-button-subtle-icon-bg: var(--primitives-color-common-brown-900);
+  --color-button-subtle-text: var(--primitives-color-common-brown-900);
+
+  --color-chip-blue-bg: var(--primitives-color-brand-blue-100);
+  --color-chip-blue-border: var(--primitives-color-brand-blue-700);
+  --color-chip-blue-text: var(--primitives-color-brand-blue-700);
+  --color-chip-green-bg: var(--primitives-color-brand-green-100);
+  --color-chip-green-border: var(--primitives-color-brand-green-500);
+  --color-chip-green-text: var(--primitives-color-brand-green-500);
+  --color-chip-purple-bg: var(--primitives-color-brand-purple-100);
+  --color-chip-purple-border: var(--primitives-color-brand-purple-500);
+  --color-chip-purple-text: var(--primitives-color-brand-purple-500);
+  --color-chip-red-bg: var(--primitives-color-brand-red-100);
+  --color-chip-red-border: var(--primitives-color-brand-red-500);
+  --color-chip-red-text: var(--primitives-color-brand-red-500);
+
+  --color-field-neutral-reverse-bg: var(--primitives-color-common-white);
+  --color-field-neutral-reverse-icon: var(--primitives-color-common-white);
+  --color-field-neutral-reverse-icon-bg: var(--primitives-color-common-black-500);
+  --color-field-neutral-reverse-text: var(--primitives-color-common-black-300);
+  --color-field-primary-bg: var(--primitives-color-brand-blue-100);
+  --color-field-primary-icon: var(--primitives-color-brand-blue-100);
+  --color-field-primary-icon-bg: var(--primitives-color-brand-blue-500);
+  --color-field-primary-text: var(--primitives-color-brand-blue-500);
+  --color-field-subtle-bg: var(--primitives-color-common-brown-300);
+  --color-field-subtle-icon: var(--primitives-color-common-brown-300);
+  --color-field-subtle-icon-bg: var(--primitives-color-common-brown-900);
+  --color-field-subtle-text: var(--primitives-color-common-brown-700);
+
+  --color-logo-neutral: var(--primitives-color-common-black-500);
+  --color-logo-primary: var(--primitives-color-brand-blue-700);
+
+  --color-overlay-image-medium: var(--primitives-color-common-black-a50);
+  --color-overlay-image-soft: var(--primitives-color-common-black-a30);
+  --color-overlay-image-strong: var(--primitives-color-common-black-a70);
+
+  --color-result-bg: var(--primitives-color-common-brown-700);
+
+  --color-tag-blue-soft-bg: var(--primitives-color-brand-blue-100);
+  --color-tag-blue-soft-text: var(--primitives-color-brand-blue-500);
+  --color-tag-blue-strong-bg: var(--primitives-color-brand-blue-500);
+  --color-tag-blue-strong-text: var(--primitives-color-brand-blue-100);
+  --color-tag-green-soft-bg: var(--primitives-color-brand-green-100);
+  --color-tag-green-soft-text: var(--primitives-color-brand-green-500);
+  --color-tag-green-strong-bg: var(--primitives-color-brand-green-500);
+  --color-tag-green-strong-text: var(--primitives-color-brand-green-100);
+  --color-tag-purple-soft-bg: var(--primitives-color-brand-purple-100);
+  --color-tag-purple-soft-text: var(--primitives-color-brand-purple-500);
+  --color-tag-purple-strong-bg: var(--primitives-color-brand-purple-500);
+  --color-tag-purple-strong-text: var(--primitives-color-brand-purple-100);
+  --color-tag-red-soft-bg: var(--primitives-color-brand-red-100);
+  --color-tag-red-soft-text: var(--primitives-color-brand-red-500);
+  --color-tag-red-strong-bg: var(--primitives-color-brand-red-500);
+  --color-tag-red-strong-text: var(--primitives-color-brand-red-100);
+  --color-text: var(--primitives-color-common-black-500);
+  --color-text-link: var(--primitives-color-brand-blue-500);
+  --color-text-on-image-soft-blue: var(--primitives-color-brand-blue-100);
+  --color-text-on-image-soft-green: var(--primitives-color-brand-green-100);
+  --color-text-on-image-soft-purple: var(--primitives-color-brand-purple-100);
+  --color-text-on-image-soft-red: var(--primitives-color-brand-red-100);
+  --color-text-on-image-white: var(--primitives-color-common-white);
+
+  --color-utility-bar-bg: var(--primitives-color-common-brown-300);
+  --color-utility-bar-border: var(--primitives-color-common-black-500);
+  --color-utility-bar-icon: var(--primitives-color-common-black-500);
+  --color-utility-bar-separator: var(--primitives-color-common-brown-700);
+  --color-utility-bar-text: var(--primitives-color-common-black-500);
+}
