@@ -1,11 +1,15 @@
-<header class="banner">
-  <a class="brand" href="{{ home_url('/') }}">
-    {!! $siteName !!}
+<header class="flex flex-row justify-between items-center h-fit px-14 py-4 bg-bg-page">
+  <a class="" href="{{ home_url('/') }}">
+    <img src="{{ Vite::asset('resources/images/logos/otc.svg') }}" alt="{{ $siteName }}" class="h-28 w-auto">
   </a>
 
-  @if (has_nav_menu('primary_navigation'))
-    <nav class="nav-primary" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
-      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'echo' => false]) !!}
+  @if ($primaryNavigation)
+    <nav aria-label="{{ $primaryNavigationName }}">
+      <ul class="flex flex-row gap-12">
+        @foreach ($primaryNavigation as $item)
+          <li><a href="{{ $item->url }}">{{ $item->label }}</a></li>
+        @endforeach
+      </ul>
     </nav>
   @endif
 </header>
