@@ -3,6 +3,9 @@ import tailwindcss from '@tailwindcss/vite';
 import laravel from 'laravel-vite-plugin'
 import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 
+// Charge le .env dans process.env (ignoré si le fichier n'existe pas)
+try { process.loadEnvFile('.env'); } catch {}
+
 // Set APP_URL if it doesn't exist for Laravel Vite plugin
 if (! process.env.APP_URL) {
   process.env.APP_URL = 'http://example.test';
