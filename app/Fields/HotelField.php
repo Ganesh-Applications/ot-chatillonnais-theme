@@ -28,6 +28,15 @@ class HotelField extends Field
                 'tourinsoft_path' => 'DESCRIPTIFs.0.Descriptioncommerciale',
             ])
 
+            ->addTaxonomy('category', [
+                'label' => "Catégorie",
+                'taxonomy' => 'category',
+                'field_type' => 'select',
+                'save_terms' => 1,
+                'load_terms' => 1,
+                //-- @todo changer ce path une fois que le flux sera mis à jour
+                'tourinsoft_path' => 'TYPEHEBERGEMENT',
+            ])
             ->addTaxonomy('hotel_type', [
                 'label' => "Type d'hébergement",
                 'taxonomy' => 'hotel_type',
