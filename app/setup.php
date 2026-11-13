@@ -161,3 +161,10 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+/**
+ * Clé API Google Maps pour le champ ACF « Google Map » (définie dans .env).
+ */
+add_action('acf/init', function () {
+    acf_update_setting('google_api_key', env('GOOGLE_MAPS_API_KEY'));
+});
