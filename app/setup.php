@@ -141,30 +141,6 @@ add_action('after_setup_theme', function () {
 }, 20);
 
 /**
- * Register the theme sidebars.
- *
- * @return void
- */
-add_action('widgets_init', function () {
-    $config = [
-        'before_widget' => '<section class="widget %1$s %2$s">',
-        'after_widget' => '</section>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-    ];
-
-    register_sidebar([
-        'name' => __('Primary', 'ot-chatillonnais'),
-        'id' => 'sidebar-primary',
-    ] + $config);
-
-    register_sidebar([
-        'name' => __('Footer', 'ot-chatillonnais'),
-        'id' => 'sidebar-footer',
-    ] + $config);
-});
-
-/**
  * Clé API Google Maps pour le champ ACF « Google Map » (définie dans .env).
  */
 add_action('acf/init', function () {
