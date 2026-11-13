@@ -84,7 +84,9 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'ot-chatillonnais'),
+        'primary_navigation' => __('Primary navigation', 'ot-chatillonnais'),
+        'footer_left' => __('Footer left', 'ot-chatillonnais'),
+        'footer_right' => __('Footer right', 'ot-chatillonnais'),
     ]);
 
     /**

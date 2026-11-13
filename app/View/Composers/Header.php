@@ -5,7 +5,7 @@ namespace App\View\Composers;
 use Log1x\Navi\Navi;
 use Roots\Acorn\View\Composer;
 
-class Navigation extends Composer
+class Header extends Composer
 {
     /**
      * List of views served by this composer.
