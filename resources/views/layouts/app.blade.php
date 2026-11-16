@@ -16,6 +16,8 @@
 
     @include('sections.header')
 
+    @include('sections.toolbar')
+
     <main id="main" class="main">
         @yield('content')
     </main>

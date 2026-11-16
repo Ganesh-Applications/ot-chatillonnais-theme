@@ -87,6 +87,7 @@ add_action('after_setup_theme', function () {
         'primary_navigation' => __('Primary navigation', 'ot-chatillonnais'),
         'footer_left' => __('Footer left', 'ot-chatillonnais'),
         'footer_right' => __('Footer right', 'ot-chatillonnais'),
+        'toolbar' => __('Toolbar', 'ot-chatillonnais'),
     ]);
 
     /**
